@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <!-- css style -->
+    <style>
+        form{
+
+            text-align: center;
+        }
+       input[type="text"]{
+           width:350px;
+           height:55px;
+       }
+       input[type="button"]{
+            width:50px;
+            height:45px;
+            margin:5px;
+       }
+    </style>
+   
+   <!-- javascript calculations -->
+    <script>
+        function calculations(a){
+            myform.display.value=myform.display.value+a;
+        }
+        function equal(){
+            myform.display.value=eval(myform.display.value);
+        }
+    </script>
+    
+</head>
+<body>
+      <form name="myform">
+          <input type="text" name="display" > <br>
+          <input type="button" value="7" onclick="calculations(7)">
+          <input type="button" value="8" onclick="calculations(8) ">
+          <input type="button" value="9" onclick="calculations(9) ">
+          <input type="button" value="/" onclick="calculations('/') "> <br>
+          <input type="button" value="4" onclick="calculations(4) ">
+          <input type="button" value="5" onclick="calculations(5) ">
+          <input type="button" value="6" onclick="calculations(6) ">
+          <input type="button" value="*" onclick="calculations('*') "> <br>
+          <input type="button" value="1" onclick="calculations(1) ">
+          <input type="button" value="2" onclick="calculations(2) ">
+          <input type="button" value="3" onclick="calculations(3) ">
+          <input type="button" value="-" onclick="calculations('-') "> <br>
+          <input type="button" value="." onclick="calculations('.') ">
+          <input type="button" value="0" onclick="calculations(0) ">
+          <input type="button" value="+" onclick="calculations('+') ">
+          <input type="button" value="=" onclick="equal()"> <br>
+
+      </form>
+    
+</body>
+</html>

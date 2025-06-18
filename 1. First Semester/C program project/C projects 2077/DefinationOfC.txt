@@ -1,0 +1,1 @@
+C is a high level programming language developed by Dennies Ritchie in 1971 at Bell Lab's in USA.

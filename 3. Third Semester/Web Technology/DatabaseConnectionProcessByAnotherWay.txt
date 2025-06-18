@@ -1,0 +1,24 @@
+Describe the database connection process in PHP?
+Before we start building PHP connection to MYSQL database we need to know what PHPMyAdmin is. It’s control panel from where you can manage the database that you’ve created. 
+Database connection process in PHP are as follows:
+1.	Create a connection 
+2.	Select database
+3.	Perform database query
+4.	Use return data
+5.	Close connection 
+
+1.	Create a connection 
+ It is very important when you want to start a dynamic website to create a connection with your SQL by using mysql_connect() function. 
+
+2.	Select database
+ To select a database we use mysal_select_db() function which the arguments are the name of the database and connection made earlier.
+
+3.	Perform database query
+In this step, we have to select out data from the database and bring it into our web page. The best decision to use mysql_query() function which it will send a MYSQL query with 2 arguments as displayed in the above code.
+
+4.	Use return data
+To display the result on your web page, you have to use while() loop function in addition to mysql_fetch_array() function which fetches a result row as an associative array, a numeric array, or both.
+
+5.	Close connection
+To close connection, it is better to use mysql_close() function to close MYSQL connec-tion. This is a very important function as it closes the connection to the database server. 
+
